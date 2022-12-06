@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
+// import React from "react";
+// import Page1 from './Page1';
+// import Page2 from './Page2';
+import React, { Component } from 'react';
+import AnimatedRoutes from './AnimatedRoutes';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends Component {
+  render () {
+    return (
+      <AnimatedRoutes />
+    );
+  }
 }
 
 export default App;
